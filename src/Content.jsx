@@ -1,5 +1,4 @@
 import "./content.css"
-
 function Content({data}) {
    if(data === "Javascript"){
         return(
@@ -11,7 +10,6 @@ function Content({data}) {
         )
     }else if(data === "Php"){
         return(
-        
             <div className="content">
                 <h4>Php</h4>
                 <p>PHP is a popular programming language used for web development It is mainly used to create dynamic and interactive websites PHP runs on the server and processes data before sending it to the browser It can connect to databases such as MySQL PHP is commonly used to build login systems and online stores It works well with HTML, CSS, and JavaScript Learning PHP helps you develop powerful and functional websites.</p>

@@ -3,7 +3,6 @@ import { useState , useEffect } from "react";
 import './App.css'
 import Content from './Content';
 
-
 function App() {
    const [counter, setCounter] = useState(() => {
     return localStorage.getItem("selectedLanguage") || "Javascript";
@@ -12,7 +11,6 @@ function App() {
     localStorage.setItem("selectedLanguage", counter);
   }, [counter]);
   
-
   return (
     <>
      <div className='header'>
@@ -20,8 +18,7 @@ function App() {
       <Tabs counter = {counter} setCounter= {setCounter} />
     </div>
     <Content data={counter} />
-    </>
-    
+    </> 
   )
 }
 

@@ -6,7 +6,6 @@
 .header h1{
   padding: 25px 10px 0;
   color: white;
-
 }
   @media (max-width:480px) {
     .header h1{

@@ -1,6 +1,4 @@
 import "./tabs.css"
-
-
 function Tabs({counter,setCounter}) {
     
     function showHandler1(){
