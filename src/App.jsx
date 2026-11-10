@@ -1,3 +1,4 @@
+import Tabs from './Tabs'
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   
      <div className='header'>
       <h1>Programming Languages</h1>
-      
+      <Tabs />
     </div>
     
   )
