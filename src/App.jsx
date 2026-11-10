@@ -19,7 +19,7 @@ function App() {
       <h1>Programming Languages</h1>
       <Tabs counter = {counter} setCounter= {setCounter} />
     </div>
-    <Content />
+    <Content data={counter} />
     </>
     
   )
