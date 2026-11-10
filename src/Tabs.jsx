@@ -1,3 +1,4 @@
+import "./tabs.css"
 
 
 function Tabs({counter,setCounter}) {
