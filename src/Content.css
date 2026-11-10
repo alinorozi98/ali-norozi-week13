@@ -1,0 +1,36 @@
+
+.content{
+  background-color: rgb(47, 78, 232);
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.content h4{
+  text-align: start;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+.content p{
+  color: white;
+  font-size: 1.1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+}
+.image{
+  width: 290px;
+  margin: 90px 0;
+  animation: language 5s infinite;
+ 
+}
+@keyframes language {
+  50%{
+    transform: scale(1.1);
+  }
+}
+@media (max-width : 480px) {
+  .image{
+    width:200px;
+    margin: 40px 0;
+  }
+}
