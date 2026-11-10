@@ -1,14 +1,21 @@
 import Tabs from './Tabs'
+import { useState , useEffect } from "react";
 
 
 function App() {
-
+   const [counter, setCounter] = useState(() => {
+    return localStorage.getItem("selectedLanguage") || "Javascript";
+  });
+  useEffect(() => {
+    localStorage.setItem("selectedLanguage", counter);
+  }, [counter]);
+  
 
   return (
   
      <div className='header'>
       <h1>Programming Languages</h1>
-      <Tabs />
+      <Tabs counter = {counter} setCounter= {setCounter} />
     </div>
     
   )
