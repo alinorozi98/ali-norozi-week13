@@ -1,6 +1,7 @@
 import Tabs from './Tabs'
 import { useState , useEffect } from "react";
 import './App.css'
+import Content from './Content';
 
 
 function App() {
@@ -13,11 +14,13 @@ function App() {
   
 
   return (
-  
+    <>
      <div className='header'>
       <h1>Programming Languages</h1>
       <Tabs counter = {counter} setCounter= {setCounter} />
     </div>
+    <Content />
+    </>
     
   )
 }
